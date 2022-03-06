@@ -20,7 +20,7 @@ function App() {
   }, [])
 
   const onHandleClick = (item) => {
-    
+    console.log(item)
   }
   return (
     <div className="App">

@@ -1,6 +1,6 @@
-export default [
+const Data = [
     {
-      'value' : '토끼',
+      value : 1,
       active : false,
       complete : false
     },
@@ -10,7 +10,27 @@ export default [
       complete : false
     },
     {
-      value : '오리',
+      value : 3,
+      active : false,
+      complete : false
+    },
+    {
+      value : 4,
+      active : false,
+      complete : false
+    },
+    {
+      value : 1,
+      active : false,
+      complete : false
+    },
+    {
+      value : 2,
+      active : false,
+      complete : false
+    },
+    {
+      value : 3,
       active : false,
       complete : false
     },
@@ -20,3 +40,5 @@ export default [
       complete : false
     }
 ]
+
+export default Data;

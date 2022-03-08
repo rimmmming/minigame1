@@ -28,10 +28,15 @@ const Card = styled.span`
   ${(props) => (props.back ? 'transform: rotateY(180deg);' : '')}
 `;
 
-function CardItem({item, idx, onHandleClick}) {
+function CardItem({item, index, onHandleClick}) {
+  const activeClass = (item.active === true) ? 'active': '';
+  function onClick(item){
+    if(item.active === true) return;
+    onHandleClick(index)
+  }
     return (
         <>
-            <Button onClick={() => {onHandleClick(item)}}>
+            <Button className={activeClass} onClick={()=>{onClick(item)}}>
                 <Card front></Card>
                 <Card back>{item.value}</Card>
             </Button>
